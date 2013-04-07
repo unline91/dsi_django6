@@ -4,8 +4,8 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('',
-    ('^pages/', include('django.contrib.flatpages.urls')),
+#urlpatterns = patterns('',
+ #   ('^pages/', include('django.contrib.flatpages.urls')),
 
     # Examples:
     # url(r'^$', 'mysite.views.home', name='home'),
@@ -15,5 +15,9 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-     url(r'^admin/', include(admin.site.urls)),
+  #   url(r'^admin/', include(admin.site.urls)),
+#)
+
+urlpatterns = patterns('',
+    (r'^$',homefun),
 )
